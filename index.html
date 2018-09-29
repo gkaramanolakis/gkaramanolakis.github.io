@@ -30,7 +30,13 @@
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"-->
     <link href="css/font-1.css" rel="stylesheet" type="text/css">
+
+    <!-- Necessary for Experience timeline !-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+
     <link rel="icon" href="img/bass-key.png">
+
     <!--link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'-->
     <!--link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'-->
     <!--link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'-->
@@ -71,10 +77,7 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                    <a class="page-scroll" href="#education">Education</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#profexp">Experience</a>
+                        <a class="page-scroll" href="#experience">Experience</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#pub">Publications</a>
@@ -111,7 +114,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-heading">About</h3>
                     <br> <br>
                 </div>
                 <div class="col-md-3 panel">
@@ -120,8 +123,10 @@
                 <div class="col-md-9">
                     <p class="text-muted"><br><br>I am a second-year Ph.D. student in <a target="_blank" href="https://www.cs.columbia.edu/">Computer Science</a> at <a target="_blank" href="https://www.columbia.edu/">Columbia University in the City of New York</a>. 
                     <br> I am a member of the <a target="_blank" href="https://cudbg.github.io/">Database Research Group (CUDBG)</a> and the <a target="_blank" href="https://datascience.columbia.edu/">Data Science Institute (DSI)</a> at Columbia University.
+                    <!--
                     <br> Before coming to Columbia University, I worked as a Machine Learning Engineer at <a target="_blank" href="https://behavioralsignals.com/">Behavioral Signals</a>. <br>
                     I received a M.Eng. in Electrical and Computer Engineering from the <a target="_blank" href="https://www.ntua.gr/en/"> National Technical University of Athens (NTUA)</a>.
+                    !-->
 
                     <br> <br> My research interests lie in the fields of Information Extraction, Natural Language Processing, and Machine Learning. <br>Currently, I am employing weakly supervised learning frameworks in deep learning models for a fine-grained analysis of online user-generated reviews.
                     <!--, without using fine-grained ground-truth labels, which are expensive to obtain manually. <br>!-->
@@ -137,96 +142,116 @@
         </div>
     </section>
 
-    <section id="education" >
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Education</h2>
-                    <br> <br>
-                </div>
+   <section id="experience" class="slim-container">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Education</h3>
 
-                <div class="col-lg-12">
-                    <h2 class="section-subheading text-muted">Columbia University in the City of New York</h2>
-                </div>
-                <div class="col-md-12">
-                    <p class="text-muted">Ph.D. student, Computer Science, New York City, US, September 2017 - now</p>
-                    <p class="text-muted">Current GPA <b>4.26/4.00</b></p>
-                    <p class="text-muted">Advisors: Professor <a target="_blank" href="http://www.cs.columbia.edu/~gravano/">Luis Gravano</a>, Professor <a target="_blank" href="http://www.cs.columbia.edu/~djhsu/">Daniel Hsu</a> </p>
+                  <div class="ol-timeline">
+                    <div class="tl-item pub-item with-icon"><span class="item-section">2017-now</span>
+                        <div class="elem-wrapper">
+                            <!--<i class="oli oli-university"></i>!-->
+                            <img src="./img/columbia.png" class="img-circle" width="50" height="50" vspace="0">
+                        </div>
+                       <div class="content-wrapper">
+                        <h5 class="title">
+                            <a target="_blank" href="http://www.cs.columbia.edu/">Columbia University</a>
+                        </h5>
+                        <div class="description">
+                          <p>Ph.D. in Computer Science<br>
+                          <!--Advisors: Professor <a target="_blank" href="http://www.cs.columbia.edu/~gravano/">Luis Gravano</a>, Professor <a target="_blank" href="http://www.cs.columbia.edu/~djhsu/">Daniel Hsu</a> !-->
+                          </p>
 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item pub-item with-icon"><span class="item-section">2017-now</span>
+                        <div class="elem-wrapper">
+                            <!--<i class="oli oli-university"></i>!-->
+                            <img src="./img/columbia.png" class="img-circle" width="50" height="50" vspace="0">
+                        </div>
+                      <div class="content-wrapper">
+                        <h5 class="title">
+                            <a target="_blank" href="http://www.cs.columbia.edu/">Columbia University</a>
+                        </h5>
+                        <div class="description">
+                          <p>M.Sc. in Computer Science
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item pub-item with-icon"><span class="item-section">2011-2017</span>
+                      <div class="elem-wrapper">
+                        <img src="./img/ntua.svg" class="img-circle" width="50" height="50" vspace="0">
+                      </div>
+                      <div class="content-wrapper">
+                        <h5 class="title">
+                            <a target="_blank" href="https://www.ece.ntua.gr/en">National Technical University of Athens</a>
+                        </h5>
+                        <div class="description">
+                          <p>M.Eng. in Electrical and Computer Engineering</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <h3>Professional Experience</h3>
+                  <div class="ol-timeline">
+                    <div class="tl-item pub-item with-icon"><span class="item-section">2016-2017</span>
+                      <div class="elem-wrapper">
+                        <img src="./img/behavioralsignals.jpg" class="img-circle" width="50" height="50" vspace="0">
+                      </div>
+
+
+                      <div class="content-wrapper">
+                        <h5 class="title">
+                            <a target="_blank" href="https://behavioralsignals.com/">Behavioral Signals</a>
+                        </h5>
+                        <div class="description">
+                          <p>Machine Learning Engineer</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item pub-item with-icon"><span class="item-section">2016</span>
+                      <div class="elem-wrapper">
+                        <img src="./img/athena-center.png" class="img-circle" width="50" height="50" vspace="0">
+                      </div>
+                      <div class="content-wrapper">
+                        <h5 class="title">
+                            <a target="_blank" href="http://www.ilsp.gr/en">"Athena" Research & Innovation Center</a>
+                        </h5>
+                        <div class="description">
+                          <p>Research Assistant</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tl-item pub-item with-icon"><span class="item-section">2015</span>
+                      <div class="elem-wrapper">
+                        <!--<i class="oli oli-desk_lamp"></i>!-->
+                        <img src="./img/DEMOKRITOS.png" class="img-circle" width="50" height="50" vspace="0">
+                      </div>
+                      <div class="content-wrapper">
+                        <h5 class="title">
+                            <a target="_blank" href="https://www.iit.demokritos.gr/cil/">"Demokritos" Center of Scientific Research</a>
+                        </h5>
+                        <div class="description">
+                          <p>Research Intern</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
 
-            <br /> <br />
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-subheading text-muted">National Technical University of Athens</h2>
-                </div>
-                <div class="col-md-12">
-                    <p class="text-muted">M.Eng., Electrical and Computer Engineering, Athens, Greece, September 2011 - June 2017</p>
-                    <p class="text-muted">Nationwide University Entrance Examination Score: <b>19.708/20.000</b>,  GPA <b>9.26/10.00</b></p>
-                    <p class="text-muted">Advisor: Professor <a target="_blank" href="http://www.telecom.tuc.gr/~potam/">Alexandros Potamianos</a></p>
-                    <p class="text-muted">Diploma Thesis: "Grounding Word Semantic Representations to Acoustic and Visual Perceptual Modalities"</a></p>
-
-                </div>
-            </div>
-
-            <br>
-        </div>
-    </section>
- 
-     <section id="profexp" >
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Professional Experience</h2>
-                    <br> <br>
-                </div>
-
-                <div class="col-lg-12">
-                    <h2 class="section-subheading text-muted">Behavioral Signals</h2>
-                </div>
-                <div class="col-md-12">
-                    <p class="text-muted">Machine Learning Engineer, Athens, Greece (remote), April 2016 - August 2017</p>
-                    <p class="text-muted">Trained machine learning models for the recognition of core emotions, moods and behaviors from conversational speech data
-</p>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-subheading text-muted">“Athena” Research & Innovation Center</h2>
-                </div>
-                <div class="col-md-12">
-                    <p class="text-muted">Research Assistant in the Institute for Language & Speech Processing, Athens, Greece, January 2016 - June 2017</p>
-                    <p class="text-muted">Carried out research in the context of my diploma thesis and the IEEE Signal Processing Cup 2017: “Real-Time Beat Tracking”</p>
-
-                    <p class="text-muted">Supervisors: <a target="_blank" href="http://www.telecom.tuc.gr/~potam/">Alexandros Potamianos</a>, <a target="_blank" href="http://www.ilsp.gr/en/infoprojects/meta?view=member&id=20&task=show">Aggelos Gkiokas</a>, and <a target="_blank" href="http://www.ilsp.gr/en/research/publications?view=member&id=33&task=show">Vassilis Katsouros</a></p>
-
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-subheading text-muted">“Demokritos” National Center of Scientific Research</h2>
-                </div>
-                <div class="col-md-12">
-                    <p class="text-muted">Research Intern in the Computational Intelligence Laboratory, Athens, Greece, November 2015 - February 2016</p>
-                    <p class="text-muted">Carried out research in the context of the project: “Audio Analysis for Soundscape Event Detection and Quality Estimation using Machine Learning Methods”</p>
-
-                    <p class="text-muted">Supervisors: <a target="_blank" href="http://users.iit.demokritos.gr/~tyianak/">Theodoros Giannakopoulos</a>, <a target="_blank" href="http://users.iit.demokritos.gr/~sper/">Stavros Perantonis</a></p> 
-
-                </div>
-            </div>
-
-            <br>
-        </div>
-    </section>
  <section id="pub" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Publications</h2>
+                    <h3 class="section-heading">Publications</h3>
                     <br> <br>
                 </div>
             </div>
@@ -236,7 +261,7 @@
                     <h4 class="text-muted">Pending Submission (double-blind)</h4>
                 </div>
                 <div class="col-md-12 text-muted">
-                    <b>Giannis Karamanolakis</b> et al.
+                    <b>Giannis Karamanolakis</b>, Daniel Hsu, and Luis Gravano
                 </div>
                 <div class="col-md-12 text-muted">
                      WSDM 2019, Melbourne, Australia <br>
@@ -321,7 +346,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Awards, Fellowships, and Scholarships</h2>
+                    <h3 class="section-heading">Selected Awards, Fellowships, and Scholarships</h3>
                     <br> <br>
                 </div>
 
@@ -369,7 +394,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact</h2>
+                    <h3 class="section-heading">Contact</h3>
                     <h3 class="section-subheading text-muted">
                     You can contact me at x@cs.columbia.edu, where x=gkaraman. <br>My office is at Mudd 406, Data Science Institute, Columbia University (<a target="_blank" href="https://goo.gl/maps/CsUb6tbN69L2">map</a>). 
                     <br><br>
