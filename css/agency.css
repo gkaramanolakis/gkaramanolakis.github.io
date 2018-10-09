@@ -10,7 +10,7 @@ body {
 }
 
 .text-muted {
-    color: #777;
+    color: #737373;
 }
 
 .text-primary {
@@ -35,14 +35,14 @@ a.active {
 }
 
 a {
-    color: #C0C0C0;
+    color: #3939ac;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #D0D0D0;
+    color: #3939ac;
 }
 
 h1,
