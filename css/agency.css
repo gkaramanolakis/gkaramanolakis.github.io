@@ -338,9 +338,9 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
+    /*font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-size: 15px;
+    /*font-style: italic;*/
     font-weight: 400;
     color: #fff;
 }
