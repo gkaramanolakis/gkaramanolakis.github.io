@@ -6,6 +6,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[sc,osf]{mathpazo}
 \renewcommand{\cite}[1]{\begin{verse}\leftskip=-1em\bibentry{#1}.\end{verse}}
+%\usepackage{sectsty}
+%\sectionfont{\normalfont\large\itshape\underline}
 
 \def\name{Giannis Karamanolakis}
 
@@ -29,10 +31,15 @@
 \markright{\name}
 \thispagestyle{empty}
 
-\usepackage{sectsty}
-\sectionfont{\rmfamily\mdseries\Large}
-\subsectionfont{\rmfamily\mdseries\itshape\large}
-
+%\usepackage{sectsty}
+%\sectionfont{\rmfamily\mdseries\Large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+\usepackage{xcolor}
+\definecolor{myOrange}{rgb}{1,0.5,0}
+\usepackage{titlesec}
+\titleformat{\section}
+  {\rmfamily\mdseries\Large}{\thesection}{1em}{}[{\titlerule[0.5pt]}]
+  
 
 \setlength\parindent{0em}
 
@@ -71,7 +78,6 @@
   \end{tabular}
 \end{minipage}
 
-
 \section*{Research Interests}
 \begin{itemize}
   \item Machine Learning, Information Extraction, Natural Language Processing, Deep Learning. %Probabilistic Modeling Active Learning, Audio \& Music Signal Processing, Semi-Supervised Learning
@@ -87,9 +93,9 @@
     \href{https://www.cs.columbia.edu/}{\it Columbia University, Department of Computer Science}, New York, NY, United States.
     \begin{itemize}
         %\item \textbf{Main Projects:}
-        \item Working on \href{http://publichealth.cs.columbia.edu/}{``Adaptive Information Extraction from Social Media for Actionable Inferences in Public Health''} (pending submission to a data mining conference).
-        \item Working on ``Deep Learning for Recommender Systems'' (paper at DLRS @ RecSys 2018). 
-        \item Actively participating in the \href{http://www.cs.columbia.edu/areas/machine/}{Machine Learning Group}, \href{http://www.cs.columbia.edu/nlp/index.cgi}{NLP Group}, and \href{https://cudbg.github.io/}{Database Research Group}.
+        \item[-] Working on project: \href{http://publichealth.cs.columbia.edu/}{``Adaptive Information Extraction from Social Media for Actionable Inferences in Public Health''} (pending submission to a data mining conference).
+        \item[-] Working on project: ``Machine Learning for Personalization'' (paper at DLRS @ RecSys 2018). 
+        \item[-] Actively participating in the \href{http://www.cs.columbia.edu/areas/machine/}{Machine Learning Group}, \href{http://www.cs.columbia.edu/nlp/index.cgi}{NLP Group}, and \href{https://cudbg.github.io/}{Database Research Group}.
         %\item 
         %    \textbf{Active Involvement in Groups:} %\href{https://datascience.columbia.edu/}{Data Science Institute}, 
         %     \href{http://www.cs.columbia.edu/areas/machine/}{Machine Learning Group}, \href{http://www.cs.columbia.edu/nlp/index.cgi}{NLP Group}, \href{https://cudbg.github.io/}{Database Research Group}.
@@ -102,9 +108,9 @@
     \textbf{Machine Learning Engineer} \hfill 04/2016 - 08/2017\\ 
     \href{https://behavioralsignals.com/}{\it Behavioral Signals}, Los Angeles, United States (working remotely from Athens, Greece).
     \begin{itemize}
-        \item Trained statistical models for the recognition of core emotions from conversational speech data.
-        \item Used speaker interaction patterns to predict Key Performance Indicators.
-        \item Applied Active Learning and Semi-Supervised Learning for information extraction from recorded speech. %data and the corresponding transcriptions.
+        \item[-] Trained statistical models for the recognition of core emotions from conversational speech data.
+        \item[-] Used speaker interaction patterns to predict Key Performance Indicators.
+        \item[-] Applied Active Learning and Semi-Supervised Learning for information extraction from recorded speech. %data and the corresponding transcriptions.
     \end{itemize}  
     %\item Used speaker interaction patterns to predict Key Performance Indicators.
     %\item Applied Active Learning and Semi-Supervised Learning algorithms for information extraction from recorded speech data and the corresponding transcriptions.
@@ -122,7 +128,8 @@
 
     \begin{itemize}
     %\item Carried out research under Deep Learning, Audio Signal Processing and Music Information Retrieval. 
-    \item Applied Deep Learning for the fusion of multimodal (text, audio, visual) semantic representations. 
+    %\item[-] Grounded natural language semantics to the auditory and visual sensory modalities.
+    \item[-] Applied Deep Learning for the fusion of multimodal (text, audio, visual) semantic representations. 
     %\item Applied Deep Learning for the fusion of multimodal (text, audio, visual) semantic representations. 
     %\item Participated in ``IEEE Signal Processing Cup 2017: Real-Time Beat Tracking'' challenge. 
     \end{itemize}
@@ -133,9 +140,9 @@
     Supervisors: Alexandros Potamianos, and Petros Maragos
 
     \begin{itemize}
-    \item 
+    \item[-] 
         Developed Audio-Based Distributional Semantic Models     (DSMs).
-    \item 
+    \item[-] 
         Assisted with the lab sessions of the course ``Pattern Recognition with Emphasis on Speech Recognition''.
     \end{itemize}
 \fi
@@ -147,7 +154,7 @@
 
     \begin{itemize}
         %\item Carried out research under Audio Analysis for Soundscape Event Detection and Quality Estimation.
-        Developed audio-based classifiers for Soundscape Event Detection and Quality Estimation.
+        \item[-] Developed audio-based classifiers for Soundscape Event Detection and Quality Estimation.
     \end{itemize}
 
 \end{itemize}
@@ -159,15 +166,15 @@
     \textbf{Ph.D. in Computer Science} \hfill 09/2017 - now\\
     \href{https://www.cs.columbia.edu/}{\it Columbia University}, New York, NY, United States.
      \begin{itemize}
-         \item     
+         \item[-]     
          \textbf{Advisors:} \href{http://www.cs.columbia.edu/~gravano/}{Prof.~Luis Gravano}, \href{http://www.cs.columbia.edu/~djhsu/}{Prof.~Daniel Hsu}.
          %\item 
          %
-         \item 
-            \textbf{Current GPA:} 4.26/4.00.
+         \item[-] 
+            \textbf{Current GPA} (class requirements): 4.26/4.00.
         %\item 
             %\textbf{Main Projects:} \href{http://publichealth.cs.columbia.edu/}{Adaptive Information Extraction from Social Media for Actionable Inferences in Public Health} (submission to ??? 2019), Deep Learning for Recommender Systems (paper at DLRS 2018). 
-        \item \textbf{Research Areas:} Machine Learning, Information Extraction, Natural Language Processing.
+        \item[-] \textbf{Research Areas:} Machine Learning, Information Extraction, Natural Language Processing.
      \end{itemize}
      
     %\item 
@@ -181,9 +188,9 @@
     \textbf{M.Eng. in Electrical \& Computer Engineering} \hfill 09/2011 - 07/2017\\
     \href{http://ece.ntua.gr/}{\it National Technical University of Athens}, Athens, Greece.
     \begin{itemize}
-        \item \textbf{Major:} Computer Science, GPA: 9.26/10.00 (top 2\%).
-        \item \textbf{Advisor:} Prof. Alexandros Potamianos.
-        \item \textbf{Thesis:} ``Grounding Word Semantic Representations to Acoustic and Visual Perceptual Modalities''.
+        \item[-] \textbf{Major:} Computer Science, GPA: 9.26/10.00 (top 2\%).
+        \item[-] \textbf{Advisor:} Prof. Alexandros Potamianos.
+        \item[-] \textbf{Thesis:} ``Grounding Word Semantic Representations to Acoustic and Visual Perceptual Modalities''.
     \end{itemize}
 
 
@@ -216,7 +223,7 @@
 \begin{itemize}
 
   \item \textbf{Gerondelis Foundation Scholarship}, New York, US \hfill 06/2018
-\item \textbf{Joseph F. Traub Fellowship}, Columbia University, New York, US, \hfill 04/2018
+\item \textbf{Joseph F. Traub Fellowship}, Columbia University, New York, US \hfill 04/2018
 \item \textbf{Addressing the Opioid Epidemic, Design Challenge Award}, Columbia University, New York, US \hfill  12/2017
 \item \textbf{Columbia Engineering Presidential Fellowship}, New York, US \hfill  08/2017 - 05/2022
 \item \textbf{Eurobank EFG Scholarship}, Athens, Greece \hfill 06/2012
@@ -231,6 +238,7 @@
     \item \textbf{Agile Development \& Project Management:} Git, JIRA, Jenkins, Scrum, Kanban.
     %\item Agile Development: Scrum, Kanban.
 \end{itemize}
+
 \iffalse
 \section*{Extracurricular Activities}
 \begin{itemize}
