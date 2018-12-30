@@ -770,6 +770,31 @@ ul.social-buttons li a:active {
     background-color: #D0D0D0;
 }
 
+ul.social-buttons2 {
+    margin-bottom: 0;
+}
+
+ul.social-buttons2 li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 35px;
+    line-height: 40px;
+    outline: 0;
+    color: #222;
+    background-color: #f7f7f7;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons2 li a:hover,
+ul.social-buttons2 li a:focus,
+ul.social-buttons2 li a:active {
+    background-color: #D0D0D0;
+}
+
 .btn:focus,
 .btn:active,
 .btn.active,
