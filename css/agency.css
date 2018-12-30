@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-muted {
@@ -36,6 +36,8 @@ a.active {
 
 a {
     color: #3939ac;
+    /*color: #3333ff;*/
+    font-weight: bold;
 }
 
 a:hover,
@@ -43,6 +45,10 @@ a:focus,
 a:active,
 a.active {
     color: #3939ac;
+}
+
+b { 
+  font-weight: bold;
 }
 
 h1,
