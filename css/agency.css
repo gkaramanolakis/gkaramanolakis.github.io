@@ -311,8 +311,8 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 230px;
-        padding-bottom: 500px;
+        padding-top: 250px;
+        padding-bottom: 250px;
     }
 
     header .intro-text .intro-lead-in {
@@ -326,11 +326,11 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: none;
-        font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 50px;
-        font-weight: 600;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 30px;
+        font-weight: 100;
         line-height: 75px;
-        color: #070201;
+        color: #fff;
     }
 }
 
@@ -789,7 +789,7 @@ ul.social-buttons2 li a {
     line-height: 40px;
     outline: 0;
     color: #222;
-    background-color: #f7f7f7;
+    background-color: transparent;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
