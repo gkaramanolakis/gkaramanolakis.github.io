@@ -275,6 +275,14 @@ function load_papers() {
       'blurb': ''
     },
 
+    {
+      'tag':'daume07',
+      'href':'https://www.aclweb.org/anthology/P07-1033/',
+      'title':'Frustratingly Easy Domain Adaptation',
+      'authors':'Hal Daumé III',
+      'citation':'ACL 2007',
+      'blurb': ''
+    },
   ];
 
   papers.map(function(paper, i){
