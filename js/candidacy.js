@@ -213,6 +213,15 @@ function load_papers() {
 
     // Auxiliary tasks, domains, and languages
     {
+      'tag':'collobert08',
+      'href':'https://dl.acm.org/doi/10.1145/1390156.1390177',
+      'title':'A Unified Architecture for Natural Language Processing: Deep Neural Networks with Multitask Learning',
+      'authors':'Ronan Collobert, Jason Weston',
+      'citation':'ICML 2008',
+      'blurb': ''
+    },
+    
+    {
       'tag':'kim14',
       'href':'https://www.aclweb.org/anthology/D14-1181/',
       'title':'Convolutional Neural Networks for Sentence Classification',
@@ -245,15 +254,6 @@ function load_papers() {
       'title':'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding',
       'authors':'Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova',
       'citation':'NAACL 2019',
-      'blurb': ''
-    },
-
-    {
-      'tag':'collobert08',
-      'href':'https://dl.acm.org/doi/10.1145/1390156.1390177',
-      'title':'A Unified Architecture for Natural Language Processing: Deep Neural Networks with Multitask Learning',
-      'authors':'Ronan Collobert, Jason Weston',
-      'citation':'ICML 2008',
       'blurb': ''
     },
 
