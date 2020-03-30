@@ -220,7 +220,7 @@ function load_papers() {
       'citation':'ICML 2008',
       'blurb': ''
     },
-    
+
     {
       'tag':'kim14',
       'href':'https://www.aclweb.org/anthology/D14-1181/',
@@ -281,9 +281,9 @@ function load_papers() {
     var element = document.getElementById(paper.tag)
     if (element) {
       if (paper.blurb) {
-        element.innerHTML = `<div class="blurb-div">(${i+1}) <a href="${paper.href}"><tag id="p_title">* ${paper.title}</tag></a><br><tag id="p_auth">${paper.authors}</tag><br>${paper.citation}<br><div class='blurb'>${paper.blurb}</div></div>`
+        element.innerHTML = `<div class="blurb-div"> <a href="${paper.href}"><tag id="p_title">* ${paper.title}</tag></a><br><tag id="p_auth">${paper.authors}</tag><br>${paper.citation}<br><div class='blurb'>${paper.blurb}</div></div>`
       } else {
-        element.innerHTML = `<div class="blurb-div">(${i+1}) <a href="${paper.href}"><tag id="p_title">${paper.title}</tag></a><br><tag id="p_auth">${paper.authors}</tag><br>${paper.citation}<br></div>`
+        element.innerHTML = `<div class="blurb-div"> <a href="${paper.href}"><tag id="p_title">${paper.title}</tag></a><br><tag id="p_auth">${paper.authors}</tag><br>${paper.citation}<br></div>`
       }
     }
 
