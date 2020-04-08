@@ -283,6 +283,16 @@ function load_papers() {
       'citation':'ACL 2007',
       'blurb': ''
     },
+
+    {
+      'tag':'caruana93',
+      'href':'http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=08BB5193B31170B6CDBCCAA356357B5D?doi=10.1.1.57.3196&rep=rep1&type=pdf',
+      'title':'Multitask Learning: A Knowledge-Based Source of Inductive Bias',
+      'authors':'Rich Caruana',
+      'citation':'ICML 1993',
+      'blurb': ''
+    },
+    
   ];
 
   papers.map(function(paper, i){
