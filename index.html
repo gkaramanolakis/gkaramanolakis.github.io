@@ -372,11 +372,16 @@
           <h4><small>Work with Amazon's Product Graph Team</small><br></h4>
           <h4><small>Advised by Xin Luna Dong and Jun Ma</small><br></h4>
         <p style="text-align:justify;">
-          Product understanding is crucial for product search at Amazon.com or answering to user's questions for Alexa (Amazon's personal assistant). During my internship at Amazon, we worked on the construction of an authoritative knowledge graph of products or "product graph". 
-          To scale up to a taxonomy of thousands of product categories without manual labeling, we developed TXtract, a taxonomy-aware deep neural network that extracts product attributes from the text of product titles and descriptions.
+          Product understanding is crucial for product search at Amazon.com or answering user's questions through Amazon's Alexa (personal assistant): 
+          ``Alexa, add a family-size chocolate ice cream to my shopping list.''
+          During my internship at Amazon, we worked on the construction of a knowledge graph of products or "product graph". 
+          To scale up to a taxonomy of thousands of product categories without manual labeling, we developed TXtract, a taxonomy-aware deep neural network that extracts product attributes from the text of product titles and descriptions (ACL'20 paper). 
+          TXtract is an important component into "AutoKnow", Amazon's large-scale knowledge graph of products (KDD'20 paper).
         </p>
         [<a target="_blank" href="https://blog.aboutamazon.com/innovation/making-search-easier">blog</a>]
         [<a target="_blank" href="https://arxiv.org/abs/2004.13852">ACL'20 paper</a>]
+        [<a target="_blank" href="https://arxiv.org/abs/2006.13473">KDD'20 paper</a>]
+
       </div>
     </div>
     <hr>
@@ -394,6 +399,7 @@
         <p style="text-align:justify;">
           We are developing deep learning models that annotate online reviews (e.g., Amazon product reviews, Yelp restaurant reviews) with aspects (e.g., price, image, food quality). 
           Manually collecting aspect labels for training is expensive, so we propose a weakly supervised learning framework, which only requires from the user to provide a few descriptive keywords (seed words) for each aspect (e.g., 'price', 'value', and 'money' for the Price aspect). 
+          To leverage keywords in neural networks, we developed "Weakly-Supervised Co-Training", a teacher-student approach that uses keywords in a teacher classifier to train a student neural network (similar to knowledge distillation) and iteratively updates the teacher and student (EMNLP'19 paper).
         </p>
         [<a target="_blank" href="https://arxiv.org/pdf/1909.00415.pdf">LLD@ICLR'19 paper</a>] [<a target="_blank" href="https://openreview.net/pdf?id=HyxoAoxOwN">EMNLP'19 paper</a>]
 
