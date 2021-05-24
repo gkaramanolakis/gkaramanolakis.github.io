@@ -465,31 +465,51 @@
           We have been collaborating with health departments in NYC and LA on processing social media data for public health applications. <!--The current instantiation of the project is a set of classification systems that track Yelp and Twitter!--> 
           We have deployed systems that help DOHMH track user complaints on social media (e.g., Yelp reviews, tweets) and detect foodborne illness outbreaks in restaurants.<br><br>
           
-          Our weakly supervised (HSAN) network highlights important sentences in "Sick" reviews to make inspection easier (see <a class="page-scroll" href="#pub">Papers</a>).
+          We have developed a weakly supervised network, HSAN, which highlights important sentences in "Sick" reviews as an effort to facilitate inspections in health departments. We have also built models for foodborne illness detection in languages beyond English and have analyzed how Yelp reviews have changed during the COVID-19 pandemic. For more information, check our <a class="page-scroll" href="#pub">papers</a>. 
         </p>
-        [<a target="_blank" href="http://publichealth.cs.columbia.edu/">project page</a>] [<a target="_blank" href="https://arxiv.org/pdf/1910.00054.pdf">WNUT@EMNLP '19 paper</a>] [<a target="_blank" href="https://www.aclweb.org/anthology/D19-1468/">EMNLP '19 paper</a>] [<a target="_blank" href="pdf/presentation_slides/2019_11_22_ATT_presentation_text_mining_public_health.pdf">AT&T slides</a>] [<a target="_blank" href="https://arxiv.org/pdf/2010.05194.pdf">LOUHI@EMNLP '20 paper</a>] 
+        [<a target="_blank" href="http://publichealth.cs.columbia.edu/">project page</a>] [<a target="_blank" href="https://arxiv.org/pdf/1910.00054.pdf">WNUT@EMNLP '19 paper</a>] [<a target="_blank" href="https://www.aclweb.org/anthology/D19-1468/">EMNLP '19 paper</a>] [<a target="_blank" href="pdf/presentation_slides/2019_11_22_ATT_presentation_text_mining_public_health.pdf">AT&T slides</a>] [<a target="_blank" href="https://arxiv.org/pdf/2010.05194.pdf">LOUHI@EMNLP '20 paper</a>] [<a target="_blank" href="http://www.cs.columbia.edu/~gravano/Papers/2021/socialnlp-naacl-2021.pdf">SocialNLP@NAACL '21 paper</a>] 
       </div>
     </div>
     <hr>
 
-
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-2 col-md-offset-1 col-sm-offset-0 col-xs-offset-1 overlaybluecontainer">
-        <img src="img/world_languages.png" width="250" height="150">
+        <img src="img/proj/astra_overview.jpg" width="260" height="130">
           <div class="overlay">
-              <div class="overlaytext" style="color:white;font-size:14px;">There more than 4,000 written languages in the world!
+              <div class="overlaytext" style="color:white;font-size:14px;">ASTRA leverages domain-specific rules via self-training. 
                 </div>
           </div>
       </div>
         <div class="col-lg-7 col-md-6 col-sm-7 col-xs-10 col-lg-offset-0 col-md-offset-1 col-sm-offset-2 col-xs-offset-1">
 
-          <h4>Training Neural Networks Across Languages With Minimal Resources</h4>
+          <h4>Training Neural Networks with Domain-Specific Rules</h4>
+          <h4><small>Advised by Subho Mukherjee, Guoqing Zheng, and Ahmed Awadallah</small><br></h4>
+        <p style="text-align:justify;">
+          State-of-the-art deep neural networks require large-scale labeled training data that is often expensive to obtain or not available for many tasks. During my internship at Microsoft Research, we developed ASTRA, a semi-supervised learning framework for training neural networks using domain-specific rule (e.g., regular expression patterns). ASTRA leverages multiple heuristic rules through a Rule Attention Network (RAN Teacher) and automatically generates weakly-labeled data for training any classifier (Student) via self-training. 
+        </p>
+        [<a target="_blank" href="https://www.microsoft.com/en-us/research/publication/self-training-weak-supervision-astra/">NAACL '21 paper</a>]
+        [<a target="_blank" href="https://github.com/microsoft/ASTRA">ASTRA Code</a>]
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-lg-offset-2 col-md-offset-1 col-sm-offset-0 col-xs-offset-1 overlaybluecontainer">
+        <img src="img/world_languages.png" width="250" height="150">
+          <div class="overlay">
+              <div class="overlaytext" style="color:white;font-size:14px;">There are more than 4,000 written languages in the world!
+                </div>
+          </div>
+      </div>
+        <div class="col-lg-7 col-md-6 col-sm-7 col-xs-10 col-lg-offset-0 col-md-offset-1 col-sm-offset-2 col-xs-offset-1">
+
+          <h4>Document Classification Across Languages With Minimal Resources</h4>
           <h4><small>Advised by Luis Gravano and Daniel Hsu</small><br></h4>
         <p style="text-align:justify;">
-          While most NLP models/datasets have been developed in English, it is important to consider more languages out of the 4,000 written languages in the world. However, it would be expensive or sometimes impossible to obtain training data across all languages for deep learning. In our recent work, we show how to train neural networks for a target language without labeled data. We developed CLTS, a method for transferring weak supervision across languages using minimal resources. CLTS sometimes outperforms more expensive approaches and can be applied even for low-resource languages!  
+          While most NLP models and training datasets have been developed in English, it is important to consider more languages out of the 4,000 written languages in the world. However, it would be expensive or sometimes impossible to obtain training data across all languages for deep learning. In our recent work, we show how to train neural networks for a target language without labeled data. We developed CLTS, a method for transferring weak supervision across languages using minimal resources. CLTS sometimes outperforms more expensive approaches and can be applied even for low-resource languages!  
         </p>
         [<a target="_blank" href="https://www.aclweb.org/anthology/2020.louhi-1.15/">LOUHI@EMNLP '20 paper</a>] [<a target="_blank" href="https://www.aclweb.org/anthology/2020.findings-emnlp.323/">Findings of EMNLP '20 paper</a>]
-
+        [<a target="_blank" href="pdf/presentation_slides/EMNLP20_Findings_CLTS_slides.pdf">Slides</a>]
       </div>
     </div>
     <hr>
@@ -516,6 +536,7 @@
         [<a target="_blank" href="https://www.amazon.science/blog/building-product-graphs-automatically">blog</a>]
         [<a target="_blank" href="https://arxiv.org/abs/2004.13852">ACL '20 paper</a>]
         [<a target="_blank" href="https://arxiv.org/abs/2006.13473">KDD '20 paper</a>]
+        [<a target="_blank" href="pdf/presentation_slides/ACL_TXtract_slides.pdf">Slides</a>]
       </div>
     </div>
     <hr>
@@ -535,7 +556,7 @@
           Manually collecting aspect labels for training is expensive, so we propose a weakly supervised learning framework, which only requires from the user to provide a few descriptive keywords (seed words) for each aspect (e.g., 'price', 'value', and 'money' for the Price aspect). 
           To leverage keywords in neural networks, we developed "Weakly-Supervised Co-Training", a teacher-student approach that uses keywords in a teacher classifier to train a student neural network (similar to knowledge distillation) and iteratively updates the teacher and student (EMNLP'19 paper).
         </p>
-        [<a target="_blank" href="https://openreview.net/pdf?id=HyxoAoxOwN">LLD@ICLR '19 paper</a>] [<a target="_blank" href="https://www.aclweb.org/anthology/D19-1468/">EMNLP '19 paper</a>]
+        [<a target="_blank" href="https://openreview.net/pdf?id=HyxoAoxOwN">LLD@ICLR '19 paper</a>] [<a target="_blank" href="https://www.aclweb.org/anthology/D19-1468/">EMNLP '19 paper</a>]  [<a target="_blank" href="pdf/presentation_slides/EMNLP2019_cotraining_slides.pdf">slides</a>]
 
       </div>
     </div>
@@ -720,7 +741,7 @@
                      NAACL 2021,  9th International Workshop on Natural Language Processing for Social Media (SocialNLP 2021; To Appear) 
                 </div>
                   <div class="col-md-12">
-                  (more info soon)
+                  [<a target="_blank" href="http://www.cs.columbia.edu/~gravano/Papers/2021/socialnlp-naacl-2021.pdf">PDF</a>]
                 </div>
             </div>
 
